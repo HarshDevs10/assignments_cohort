@@ -28,4 +28,4 @@ router.get('/:id', adminMiddleware, (req, res) => {
     // Implement fetching todo by id logic
 });
 
-module.exports = router;
+module.exports = todoRouter;
