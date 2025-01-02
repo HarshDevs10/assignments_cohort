@@ -84,8 +84,10 @@ router.post('/login', async (req, res) => {
 
 });
 
-router.get('/todos', userMiddleware, (req, res) => {
+router.get('/todos', userMiddleware, async (req, res) => {
     // Implement logic for getting todos for a user
+    const userId = req.userId
+    
 });
 
 router.post('/logout', userMiddleware, (req, res) => {

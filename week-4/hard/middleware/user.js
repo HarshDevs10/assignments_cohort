@@ -3,8 +3,7 @@ const jwt = require('jsonwebtoken')
 
 function userMiddleware(req, res, next) {
     // Implement user auth logic
-    const token = req.headers.token
-
+    const token = req.cookies.uid
     if (!token){
         return res.json({
             mes: "please enter your valid jwt token"
